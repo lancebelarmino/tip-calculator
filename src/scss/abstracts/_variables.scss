@@ -1,0 +1,60 @@
+// COLOR
+// ----------------------------------------
+//
+$color: (
+	primary: (
+    jungle-green: #00474b,
+    metal-green: #6f8282,
+    light-sea-green: #26C2AD,
+    sea-green: #26c2ad,
+    sheen-green: #7aaaae,
+    crystal-green: #9fe8df,
+    jet-stream: #B9CDCE,
+    brown: #b57e6f,
+  ),
+  neutral: (
+    blue: #c5e4e7,
+    light-blue: #f3f8fb,
+    white: #ffffff,
+  ),
+);
+
+
+
+// FONT-FAMILY
+// ----------------------------------------
+//
+$font-family: (
+  heading: '"Space Mono", sans-serif',
+  subheading: '"Space Mono", sans-serif',
+  body: '"Space Mono", sans-serif',
+  button: '"Space Mono", sans-serif',
+);
+
+// FONT-SIZES
+// ----------------------------------------
+//
+$font-sizes: (
+  desktop: (
+    h1:   ( 3rem, 3.75rem, 0 ),
+    h2:   ( 1rem, 1.5rem, 0 ),
+    t-s:  ( .8125rem, 1.25rem, 0 ),
+    t-r:  ( 1.5rem, 1.5rem, 0 ),
+    btn:  ( 1.25rem, 1.25rem, 0 ),
+  ),
+  mobile: (
+    h1:   ( 2rem, 3.75rem, 0 ),
+    h2:   ( 1rem, 2.25rem, 0 ),
+    t-s:  ( .8125rem, 1.25rem, 0 ),
+    t-r:  ( 1.5rem, 2.25rem, 0 ),
+    btn:  ( 1.25rem, 1.25rem, 0 ),
+  )
+);
+
+// FONT-WEIGHT
+// ----------------------------------------
+//
+$font-weight: (
+  regular: 400,
+  bold:    700
+);

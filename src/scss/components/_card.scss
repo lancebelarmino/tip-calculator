@@ -1,0 +1,10 @@
+.card {
+  padding: 2rem;
+  border-radius: 24px;
+  background-color: color(neutral, white);
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+}

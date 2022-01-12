@@ -1,0 +1,57 @@
+.calculator {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+
+  &__logo {
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+
+  &__card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 48px;
+    height: 480px;
+  }
+
+  &__result-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border-radius: 16px;
+    background: color(primary, jungle-green);
+
+    & .card__column:first-of-type {
+      margin-bottom: 2.75rem;
+    }
+  }
+
+  @include breakpoint-down(mobile) {
+    height: 100%;
+
+    &__logo {
+      display: grid;
+      place-items: center;
+      height: 20vh;
+      margin-bottom: 0;
+    }
+
+    &__card {
+      display: grid;
+      grid-template-columns: 1fr;
+      height: 100%;
+    }
+
+    &__form {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.attribution {
+  margin: 40px 0 40px 0;
+  text-align: center;
+}

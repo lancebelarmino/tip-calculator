@@ -1,0 +1,116 @@
+// BASE
+// ----------------------------------------
+//
+body {
+  font-family: 'Space Mono', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: color(neutral, 1);
+  font-family: font-family(heading);
+  font-weight: font-weight(bold);
+}
+
+h1 {
+  @include font-size(h1, desktop);
+
+  @include breakpoint-down(mobile) {
+    @include font-size(h1, mobile);
+  }
+}
+
+h2 {
+  @include font-size(h2, desktop);
+
+  @include breakpoint-down(mobile) {
+    @include font-size(h2, mobile);
+  }
+}
+
+p {
+  color: color(neutral, 1);
+  font-family: font-family(body);
+  font-weight: font-weight(regular);
+  font-size: font-size(t-r, desktop);
+}
+
+a {
+  color: color(neutral, 1);
+}
+
+// COMPONENTS
+// ----------------------------------------
+//
+.btn {
+  @include font-size(btn, desktop);
+  color: color(neutral, 1);
+  font-family: font-family(button);
+  font-weight: font-weight(bold);
+}
+
+.subheading {
+  @include font-size(t-r, desktop);
+
+  @include breakpoint-down(mobile) {
+    @include font-size(t-r, mobile);
+  }
+}
+
+input::placeholder {
+  font-size: font-size(t-r, desktop);
+}
+
+.form {
+  &__label {
+    @include font-size(h2, desktop);
+    color: color(primary, metal-green);
+  }
+
+  &__input {
+    color: color(primary, jungle-green);
+    font-size: font-size(t-r, desktop);
+  }
+
+  &__radio {
+    &-label {
+      @include font-size(t-r, desktop);
+      color: color(neutral, white);
+      transition: color 150ms ease;
+      user-select: none;
+
+      &:hover {
+        color: color(primary, jungle-green);
+      }
+    }
+
+    &-input {
+      color: color(primary, jungle-green);
+      font-size: font-size(t-r, desktop);
+    }
+  }
+}
+
+// PAGES
+// ----------------------------------------
+//
+.calculator {
+  &__result {
+    &-title {
+      color: color(neutral, white);
+    }
+
+    &-subheading {
+      color: color(neutral, white);
+      font-size: 0.8125rem;
+    }
+
+    &-amount {
+      color: color(primary, sea-green);
+    }
+  }
+}
