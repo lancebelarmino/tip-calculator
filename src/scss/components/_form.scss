@@ -53,12 +53,26 @@ input[type='radio']:checked + .form__radio-label {
         fill: color(primary, light-sea-green);
       }
     }
+
+    &--error {
+      border-color: color(primary, brown);
+    }
+  }
+
+  &__message {
+    position: absolute;
+    top: -36px;
+    right: 0;
   }
 
   &__radio {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
+
+    &-block {
+      position: relative;
+    }
 
     &-label {
       display: block;
@@ -106,6 +120,15 @@ input[type='radio']:checked + .form__radio-label {
           opacity: 0;
         }
       }
+
+      &.form__input--error {
+        border-color: color(primary, brown);
+      }
+    }
+
+    &-message {
+      top: auto;
+      bottom: -28px;
     }
   }
 

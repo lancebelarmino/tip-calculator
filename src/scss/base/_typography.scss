@@ -68,12 +68,18 @@ input::placeholder {
 .form {
   &__label {
     @include font-size(h2, desktop);
+    font-weight: 700;
     color: color(primary, metal-green);
   }
 
   &__input {
     color: color(primary, jungle-green);
     font-size: font-size(t-r, desktop);
+  }
+
+  &__message {
+    font-weight: 700;
+    color: color(primary, brown);
   }
 
   &__radio {
@@ -91,6 +97,10 @@ input::placeholder {
     &-input {
       color: color(primary, jungle-green);
       font-size: font-size(t-r, desktop);
+    }
+
+    &-message {
+      @include font-size(t-s, desktop);
     }
   }
 }
