@@ -4,6 +4,7 @@
 $color: (
 	primary: (
     jungle-green: #00474b,
+    skobeloff: #0D686D,
     metal-green: #6f8282,
     light-sea-green: #26C2AD,
     sea-green: #26c2ad,
@@ -16,6 +17,9 @@ $color: (
     blue: #c5e4e7,
     light-blue: #f3f8fb,
     white: #ffffff,
+  ),
+  disabled: (
+    white: #ffffff4b,
   ),
 );
 

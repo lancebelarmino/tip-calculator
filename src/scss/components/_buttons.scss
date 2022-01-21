@@ -10,12 +10,17 @@
     padding: 1rem 0 1rem 0;
     border-radius: 6px;
     text-transform: uppercase;
-    background: color(primary, sea-green);
-    color: color(primary, jungle-green);
+    background: color(primary, skobeloff);
+    color: color(disabled, white);
     transition: background 250ms ease;
 
-    &:hover {
-      background: color(primary, crystal-green);
+    &--active {
+      background: color(primary, sea-green);
+      color: color(primary, jungle-green);
+
+      &:hover {
+        background: color(primary, crystal-green);
+      }
     }
   }
 }

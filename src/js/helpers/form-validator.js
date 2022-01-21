@@ -120,7 +120,6 @@ const clearFieldStatus = (field) => {
   field.classList.remove('form__input--error');
 };
 
-// Exports
 export const initializeForm = (fieldSelector) => {
   getFields(fieldSelector);
   validateOnBlur();
@@ -132,4 +131,16 @@ export const getFormStatus = () => {
   }
 
   return false;
+};
+
+export const resetForm = () => {
+  fields.forEach((field) => {
+    clearFieldStatus(field);
+  });
+
+  isFieldValid = {
+    bill: null,
+    custom: true,
+    people: null,
+  };
 };

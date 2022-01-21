@@ -23,3 +23,12 @@ export let results = {
   tip: 0,
   total: 0,
 };
+
+export const resetResults = () => {
+  results = {
+    tip: 0,
+    total: 0,
+  };
+
+  console.log('Reset result');
+};
